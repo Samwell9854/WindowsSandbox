@@ -1,0 +1,1 @@
+powershell.exe -executionpolicy bypass -File %~dp0UninstallGenericApps.ps1
