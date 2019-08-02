@@ -1,0 +1,6 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Control Panel\Desktop]
+"WallPaper"="C:\\Windows\\web\\wallpaper\\Windows\\img1.jpg"
+"WallpaperStyle"="2"
+
