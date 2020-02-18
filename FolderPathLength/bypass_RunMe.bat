@@ -1,1 +1,1 @@
-powershell.exe -executionpolicy bypass -File %~dp0RunMe.ps1
+PowerShell.exe -ExecutionPolicy Bypass -File %~dp0RunMe.ps1

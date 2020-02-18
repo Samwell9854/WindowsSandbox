@@ -19,7 +19,7 @@ if not exist %kd% (
 	echo ERROR: KD debugger for x64 not found
 	echo Download the debugger here
 	echo http://msdn.microsoft.com/en-us/windows/hardware/gg463009.aspx
-	echo Follow the page to install WDK for Windows 10 not EKW
+	echo Follow the page to install WDK for Windows 10 not EWDK
 	echo Select only "Debugging Tools for Windows"
 	echo Then run this script again
 	echo.
