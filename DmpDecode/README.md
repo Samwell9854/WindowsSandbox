@@ -1,3 +1,3 @@
-RunMe.bat
+DmpDecode
 =====
-Disables some telemetry tracking from NVIDIA
+Generate log from DMP files
