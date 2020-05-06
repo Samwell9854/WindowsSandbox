@@ -20,7 +20,7 @@ Get-AppxPackage *McAfee* -AllUsers | Remove-AppxPackage
 Get-AppxPackage Microsoft.FreshPaint -AllUsers | Remove-AppxPackage
 Get-AppxPackage Microsoft.NetworkSpeedTest -AllUsers | Remove-AppxPackage
 Get-AppxPackage Microsoft.WindowsMaps -AllUsers | Remove-AppxPackage
-Get-AppxPackage Microsoft.XboxApp -AllUsers | Remove-AppxPackage
+Get-AppxPackage *Microsoft.Xbox* -AllUsers | Remove-AppxPackage
 Get-AppxPackage *Minecraft* -AllUsers | Remove-AppxPackage
 Get-AppxPackage *Netflix -AllUsers | Remove-AppxPackage
 Get-AppxPackage *People -AllUsers | Remove-AppxPackage
