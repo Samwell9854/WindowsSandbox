@@ -1,0 +1,1 @@
+Deletes the content of $Recycle.bin in each UPD VHDX files.

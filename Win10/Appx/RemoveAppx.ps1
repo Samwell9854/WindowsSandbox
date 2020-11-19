@@ -3,6 +3,7 @@ Get-AppxPackage *Advertising* -AllUsers | Remove-AppxPackage
 Get-AppxPackage *Amazon -AllUsers | Remove-AppxPackage
 Get-AppxPackage *AutodeskSketchBook -AllUsers | Remove-AppxPackage
 Get-AppxPackage *Bing* -AllUsers | Remove-AppxPackage
+Get-AppxPackage *Booking* -AllUsers | Remove-AppxPackage
 Get-AppxPackage *BubbleWitch3Saga -AllUsers | Remove-AppxPackage
 Get-AppxPackage *Candy* -AllUsers | Remove-AppxPackage
 Get-AppxPackage *Dropbox* -AllUsers | Remove-AppxPackage
@@ -10,6 +11,7 @@ Get-AppxPackage *Duolingo* -AllUsers | Remove-AppxPackage
 Get-AppxPackage *eBay -AllUsers | Remove-AppxPackage
 Get-AppxPackage *EclipseManager -AllUsers | Remove-AppxPackage
 Get-AppxPackage *Facebook* -AllUsers | Remove-AppxPackage
+Get-AppxPackage *FarmHeroes* -AllUsers | Remove-AppxPackage
 Get-AppxPackage Flipboard.Flipboard -AllUsers | Remove-AppxPackage
 Get-AppxPackage *Getstarted -AllUsers | Remove-AppxPackage
 Get-AppxPackage *HPJumpStarts* -AllUsers | Remove-AppxPackage
