@@ -1,41 +1,48 @@
-Get-AppxPackage *3DBuilder* -AllUsers | Remove-AppxPackage
-Get-AppxPackage *Advertising* -AllUsers | Remove-AppxPackage
-Get-AppxPackage *Amazon -AllUsers | Remove-AppxPackage
-Get-AppxPackage *AutodeskSketchBook -AllUsers | Remove-AppxPackage
-Get-AppxPackage *Bing* -AllUsers | Remove-AppxPackage
-Get-AppxPackage *Booking* -AllUsers | Remove-AppxPackage
-Get-AppxPackage *BubbleWitch3Saga -AllUsers | Remove-AppxPackage
-Get-AppxPackage *Candy* -AllUsers | Remove-AppxPackage
-Get-AppxPackage *Dropbox* -AllUsers | Remove-AppxPackage
-Get-AppxPackage *Duolingo* -AllUsers | Remove-AppxPackage
-Get-AppxPackage *eBay -AllUsers | Remove-AppxPackage
-Get-AppxPackage *EclipseManager -AllUsers | Remove-AppxPackage
-Get-AppxPackage *Facebook* -AllUsers | Remove-AppxPackage
-Get-AppxPackage *FarmHeroes* -AllUsers | Remove-AppxPackage
-Get-AppxPackage Flipboard.Flipboard -AllUsers | Remove-AppxPackage
-Get-AppxPackage *Getstarted -AllUsers | Remove-AppxPackage
-Get-AppxPackage *HPJumpStarts* -AllUsers | Remove-AppxPackage
-Get-AppxPackage *Keeper -AllUsers | Remove-AppxPackage
-Get-AppxPackage *LinkedIn* -AllUsers | Remove-AppxPackage
-Get-AppxPackage *MarchofEmpires -AllUsers | Remove-AppxPackage
-Get-AppxPackage *McAfee* -AllUsers | Remove-AppxPackage
-Get-AppxPackage Microsoft.FreshPaint -AllUsers | Remove-AppxPackage
-Get-AppxPackage Microsoft.NetworkSpeedTest -AllUsers | Remove-AppxPackage
-Get-AppxPackage Microsoft.WindowsMaps -AllUsers | Remove-AppxPackage
-Get-AppxPackage *Microsoft.Xbox* -AllUsers | Remove-AppxPackage
-Get-AppxPackage *Minecraft* -AllUsers | Remove-AppxPackage
-Get-AppxPackage *Netflix -AllUsers | Remove-AppxPackage
-Get-AppxPackage *People -AllUsers | Remove-AppxPackage
-Get-AppxPackage *Phone -AllUsers | Remove-AppxPackage
-Get-AppxPackage *PicsArt-PhotoStudio -AllUsers | Remove-AppxPackage
-Get-AppxPackage *PlayReadyClient* -AllUsers | Remove-AppxPackage
-Get-AppxPackage *Plex -AllUsers | Remove-AppxPackage
-Get-AppxPackage *Office* -AllUsers | Remove-AppxPackage
-Get-AppxPackage *SkypeApp -AllUsers | Remove-AppxPackage
-Get-AppxPackage *Snapfish -AllUsers | Remove-AppxPackage
-Get-AppxPackage *Solitaire* -AllUsers | Remove-AppxPackage
-Get-AppxPackage *Spotify* -AllUsers | Remove-AppxPackage
-Get-AppxPackage *Twitter -AllUsers | Remove-AppxPackage
-Get-AppxPackage WildTangentGames* -AllUsers | Remove-AppxPackage
-Get-AppxPackage *Wunderlist -AllUsers | Remove-AppxPackage
-Get-AppxPackage *XboxIdentityProvider -AllUsers | Remove-AppxPackage
+@(
+    "*3DBuilder*",
+    "*Advertising*",
+    "*Amazon",
+    "*AutodeskSketchBook",
+    "*Bing*",
+    "*Booking*",
+    "*BubbleWitch3Saga",
+    "*Candy*",
+    "*Dropbox*",
+    "*Duolingo*",
+    "*eBay",
+    "*EclipseManager",
+    "*Facebook*",
+    "*FarmHeroes*",
+    "Flipboard.Flipboard",
+    "*Getstarted",
+    "*HPJumpStarts*",
+    "*Keeper",
+    "*LinkedIn*",
+    "*MarchofEmpires",
+    "*McAfee*",
+    "Microsoft.FreshPaint",
+    "Microsoft.NetworkSpeedTest",
+    "Microsoft.SkypeApp",
+    "Microsoft.WindowsMaps",
+    "*Microsoft.Xbox*",
+    "MicrosoftTeams",
+    "*Minecraft*",
+    "*myHP",
+    "*Netflix",
+    "*Office*",
+    "*People",
+    "*Phone",
+    "*PicsArt-PhotoStudio",
+    "*PlayReadyClient*",
+    "*Plex",
+    "*Snapfish",
+    "*Solitaire*",
+    "*Spotify*",
+    "*Twitter",
+    "WildTangentGames*",
+    "*Wunderlist",
+    "*XboxIdentityProvider"
+) | ForEach-Object {
+    Get-AppxPackage $_ | Remove-AppxPackage
+    Get-AppxPackage $_ -AllUsers | Remove-AppxPackage
+}
